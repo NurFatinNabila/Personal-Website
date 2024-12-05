@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Fatin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0a290e;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #e6b0aa;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 98%;
+      overflow: auto;
+    }
+
+    .logo a {
+     text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+   .navigation ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+   }
+
+   .navigation a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+   }
+
+   .user-options a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 15px;
+      font-size: 1rem;
+   }
+
+
+@media (max-width: 768px) {
+   .navigation ul {
+      flex-direction: column;
+      display: block;
+   }
+
+   .navigation.active ul {
+      display: flex;
+   }
+
+   .header {
+      flex-wrap: wrap;
+   }
+}
+
+    h1, h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 60px auto;
+      background-color: #e6b0aa;
+    }
+
+    /* About Me Section */
+    .about-me {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #f4e8db;
+    }
+
+    .about-me img {
+      flex: 1 1 300px;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-me-content {
+      flex: 2;
+      padding: 20px;
+    }
+
+    .about-me-content h2 {
+      margin-bottom: 15px;
+    }
+
+    /* Skills Section */
+    .skills {
+      margin-top: 30px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #f4e8db;
+    }
+
+    .skills table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+
+    .skills table th, .skills table td {
+      border: 3px solid #0a290e;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .skills table th {
+      background-color: #ff0e35;
+    }
+
+    /* Education Section */
+    .education, .experience {
+      margin-top: 30px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #f4e8db;
+    }
+
+    .education ul {
+     list-style-type: '👉';
+     padding-inline-start: 1ch;
+    }
+
+    .experience ul {
+     list-style-type: '👉';
+     padding-inline-start: 1ch;
+    }
+
+
+    .education ul li, .experience ul li {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #f9f9f9;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about-me {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-me-content {
+        padding: 0;
+      }
+
+      .about-me img {
+        width: 100%;
+      }
+    }
+    /* Footer Styles */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#contact">NURFATINNABILA.CO</a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="main.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactform.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="user-options">
+  	    <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        </div>
+    </header>
+
+
+  <div class="container">
+    <!-- About Me Section -->
+    <section class="about-me">
+      <img src="me.jpg" alt="My Photo">
+      <div class="about-me-content">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is Nur Fatin Nabila binti Shaharin. I was born on 25 November 2004 and I am now 20 years old. Currently live in Permatang Pauh, Pulau Pinang but I was born at 
+          Hospital Alor Setar, Kedah. I am passionate about programming and IT major and hoping I will forever enjoy working on projects that involve creativity and innovation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <h2>My Skills</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Proficiency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Expert</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Advanced</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Diploma in Information Management</strong> - UiTM Kedah, 2022-2025</li>
+        <li><strong>High School in Islamic+Science Stream</strong> - SMK Permatang Pasir, 2017-2022</li>
+      </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+      <h2>Experience & Qualifications</h2>
+      <ul>
+        <li>Win gold medal in InDeLib 2023 and get international level certificate, 2023</li>
+        <li>Internship at PPD Seberang Prai Tengah, 2024</li>
+        <li>Completed a bronze certification Business Model Canvas, 2024</li>
+      </ul>
+    </section>
+  </div>
+  <!-- Footer Section -->
+  <a name="contact"></a>
+  <div class="footer">
+    <p>&copy; 2024 NURFATINNABILA.CO. All Rights Reserved.</p>
+    <p>
+      Follow us on 
+      <a href="https://www.facebook.com/profile.php?id=100063684991004" target="_blank">Facebook</a>, 
+      <a href="https://t.me/fatinnabilaa" target="_blank">Telegram</a>, and 
+      <a href="https://www.instagram.com/fatinnbilaaaa/" target="_blank">Instagram</a>.
+    </p>
+  </div>
+
+</body>
+</html>

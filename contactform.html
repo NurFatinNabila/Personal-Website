@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatin's Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Page Styling */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #e6b0aa;
+      background-image: url('pink.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #e6b0aa;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 98%;
+      overflow: auto;
+    }
+
+    .logo a {
+     text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+   .navigation ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+   }
+
+   .navigation a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+   }
+
+   .user-options a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 15px;
+      font-size: 1rem;
+   }
+
+
+@media (max-width: 768px) {
+   .navigation ul {
+      flex-direction: column;
+      display: block;
+   }
+
+   .navigation.active ul {
+      display: flex;
+   }
+
+   .header {
+      flex-wrap: wrap;
+   }
+}
+
+    /* Container for Form and GIF */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      max-width: 900px;
+      width: 100%;
+      margin: 60px;
+      flex: 1;
+      padding: 20px;
+      background-color: #0a290e;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Form Styling */
+    form {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #e6b0aa;
+    }
+    h3 {
+      text-align: center;
+      color: #e6b0aa;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #e6b0aa;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #fbb4ce;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #ff0e35;
+    }
+
+    /* GIF Styling */
+    .gif-container {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .gif-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Footer Styles */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#contact">NURFATINNABILA.CO</a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="main.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactform.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="user-options">
+	    <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+  	    <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        </div>
+    </header>
+
+
+  <div class="container">
+    <!-- GIF Section -->
+    <div class="gif-container">
+      <img src="question.gif" alt="Sample Image">
+    </div>
+
+    <!-- Form Section -->
+    <form action="MAIL TO:fatinshaharin25@gmail.com" method="post" entype="text/plain">
+    <form>
+      <h2><b>Thanks for reaching me out. Feel free to ask anything further here :)</h2></b>
+      <h3><b>Fill in your details :</b></h3>
+      <hr>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="fullname" required>
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="address" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required min="10" max="70">
+
+      <label for="gender">Gender:</label><p>
+      <input type="radio" id="male" name="gender" value="male">
+
+      <label for="male" style="display: inline;">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+
+      <label for="female" style="display: inline;">Female</label><p>
+
+      <label for="dob">D.O.B:</label>
+      <input type="date" id="dob" name="dob">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telno">Tel No:</label>
+      <input type="tel" id="telno" name="telno" placeholder="012-345-6789">
+
+      <label for="question">Question:</label>
+      <textarea id="question" name="question" rows="4"></textarea>
+
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+
+    </form>
+  </div>
+  <!-- Footer Section -->
+  <a name="contact"></a>
+  <div class="footer">
+    <p>&copy; 2024 NURFATINNABILA.CO. All Rights Reserved.</p>
+    <p>
+      Follow us on 
+      <a href="https://www.facebook.com/profile.php?id=100063684991004" target="_blank">Facebook</a>, 
+      <a href="https://t.me/fatinnabilaa" target="_blank">Telegram</a>, and 
+      <a href="https://www.instagram.com/fatinnbilaaaa/" target="_blank">Instagram</a>.
+    </p>
+  </div>
+</body>
+</html>
